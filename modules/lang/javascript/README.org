@@ -62,11 +62,10 @@ sudo pacman --needed --noconfirm -S nodejs npm
 #+BEGIN_SRC sh :dir /sudo::
 sudo zypper install nodejs npm
 #+END_SRC
-
 * Troubleshooting
 ** ~tide-sort-completions-by-kind~ isn't respected
 The =:completion company= module uses =company-prescient= to sort completion by
-[[https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Frecency_algorithm][frecency]], which overrules specialized sorting provided by some company backends
+[[https://en.wikipedia.org/wiki/Frecency][frecency]], which overrules specialized sorting provided by some company backends
 (like ~company-tide~).
 
 * Appendix
